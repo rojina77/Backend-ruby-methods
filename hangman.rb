@@ -7,13 +7,16 @@ def hangman(word, guessed_letters)
         display += "_"
       end
     end
-    return display
+    display
   end
   
   # Test the hangman function
   word_to_guess = "hangman"
   guessed_letters = ["a", "n", "g"]
-
+  
+  result = hangman(word_to_guess, guessed_letters)
+  puts "Word: #{result}"
+  
   word_to_guess = "coding"
   guessed_letters = ["o", "d", "g"]
   
